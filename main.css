@@ -1,6 +1,7 @@
 body {
-    background: #7A9AF5 url(images/duck21.jpg) top center no-repeat;
-    position: absolute;
+  background: #7A9AF5 url(images/duck21.jpg) top center no-repeat;
+  position: absolute;
+  font-family: 'Indie Flower', cursive;
 }
 
 .presentation {
@@ -8,24 +9,20 @@ body {
   width: 400px;
   left: 10px;
 }
+
 .duck {
   float:right;
   width: 800px;
   height: 600px;
 }
 
-h1, h2, h3, p {
-  font-family: 'Indie Flower', cursive;
-}
-
 h2 {
   margin-bottom: 2px;
   text-align: center;
 }
-
 h3 {
-    margin: 0;
-    text-align: center;
+  margin: 0;
+  text-align: center;
 }
 
 img {
@@ -38,17 +35,19 @@ span {
   font-family: 'Syncopate', sans-serif;
 }
 
-.presentation p {
-    margin: 20px 0 10px 40px;
-    font-size: 18px;
-    margin-left: 10px;
-}
 .presentation h1 {
-  margin: 3% 15%;
+  margin: 2% 10%;
 }
+
+.presentation p {
+  margin: 20px 0 10px 40px;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
 .presentation a {
-  text-decoration: none;
   color: #302EAD;
+  text-decoration: none;
 }
 .presentation a:hover {
   color: #BD6B0E;
@@ -116,11 +115,11 @@ span {
 }
 
 .setting_board {
-    width: 350px;
-    height: 235px;
-    position: relative;
-    top: 200px;
-    left: 130px;
+  width: 350px;
+  height: 235px;
+  position: relative;
+  top: 200px;
+  left: 130px;
 }
 
 .timers {
@@ -153,7 +152,4 @@ span {
 }
 .work_timer_setter span {
   color: #59BF3F;
-}
-.break_timer_setter {
-  color: #9D3893;
 }

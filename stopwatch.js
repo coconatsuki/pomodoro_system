@@ -24,9 +24,11 @@ StopWatch.prototype = {
       this.pause();
       if(this.work_mode) {
         this.minutes = this.settings.break_minutes;
+        this.playSound('Ring01.wav');
       }
       else {
         this.minutes = this.settings.work_minutes;
+        this.playSound('Ring02.wav');
       }
       this.work_mode = !this.work_mode;
       this.seconds = 0;
@@ -73,6 +75,11 @@ StopWatch.prototype = {
   add_zero : function(num) {
     if(num < 10) {num = "0"+num; }
     return num;
+  },
+
+  playSound : function(audioFile) {
+    $('#audio').html('');
+    $('#audio').append("<audio autoplay src='sounds/" + audioFile + "'></audio>");
   },
 
 };
